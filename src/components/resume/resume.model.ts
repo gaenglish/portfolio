@@ -1,6 +1,6 @@
 import { IconName } from "@uni-design-system/uni-react";
 
-type LinkType =
+export type LinkType =
   | "LinkedIn"
   | "GitHub"
   | "Facebook"
@@ -8,7 +8,7 @@ type LinkType =
   | "Behance"
   | "PortfolioBox";
 
-type TechnologyTagType =
+export type TechnologyTagType =
   | "SQL"
   | "Node.js"
   | ".Net"
@@ -24,36 +24,35 @@ type TechnologyTagType =
   | "HTML"
   | "Bootstrap";
 
-interface Link {
+export interface ContactLink {
   type: LinkType;
   url: string;
-  iconName: IconName;
 }
 
 interface Contact {
   firstName: string;
   lastName: string;
   email: string;
-  personalUrl: string;
-  links: Link[];
+  personalUrl?: string;
+  links?: ContactLink[];
 }
 
 interface Responsibilities {
   description: string;
 }
 
-interface Experience {
+export interface Experience {
   companyName: string;
-  startDate: Date;
-  endDate: Date;
+  startDate: string;
+  endDate: string;
   jobTitle: string;
   responsibilities: Responsibilities[];
 }
 
 interface Education {
   schoolName: string;
-  startDate: Date;
-  endDate: Date;
+  startDate: string;
+  endDate: string;
   concentration: string;
   summary: string;
 }
