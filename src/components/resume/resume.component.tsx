@@ -11,7 +11,7 @@ interface ResumeComponentProps {
 export const ResumeComponent = ({
   resume,
 }: ResumeComponentProps): JSX.Element => {
-  const { contact, summary, experience, education } = resume;
+  const { contact, experience } = resume;
 
   return (
     <Flex direction="column">
