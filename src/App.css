@@ -1,1 +1,6 @@
-
+.app {
+    min-height: 100vh;
+    text-align: center;
+    color: white;
+    overflow-y: scroll;
+}

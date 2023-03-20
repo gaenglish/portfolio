@@ -23,7 +23,7 @@ export const DarkTheme: Theme = {
     "on-error-container": "#ffdad6",
     background: "#191c1a",
     "on-background": "#e1e3df",
-    surface: "#191c1a",
+    surface: "hsla(247, 5%, 12%, 0.80)",
     "on-surface": "#e1e3df",
     "surface-variant": "#404944",
     "on-surface-variant": "#bfc9c2",

@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Text } from "@uni-design-system/uni-react";
+import { Card, Flex, Text } from "@uni-design-system/uni-react";
 import { Experience } from "./resume.model";
 
 interface ResumeExperienceProps {
@@ -8,7 +8,13 @@ interface ResumeExperienceProps {
 
 export const ResumeExperience = ({ experience }: ResumeExperienceProps) => {
   return (
-    <>
+    <Card
+      cardType="elevated"
+      colorToken="surface"
+      style={{
+        backdropFilter: "blur(5px)",
+      }}
+    >
       <Flex align="space-between" style={{ width: "100%" }}>
         <Flex grow={1} direction="column">
           <Text role="title-large">{experience.companyName}</Text>
@@ -23,10 +29,10 @@ export const ResumeExperience = ({ experience }: ResumeExperienceProps) => {
       <ul>
         {experience.responsibilities.map((responsibility) => (
           <li>
-            <Text role="body-1-long">{responsibility.description}</Text>
+            <Text role="body-1-short">{responsibility.description}</Text>
           </li>
         ))}
       </ul>
-    </>
+    </Card>
   );
 };

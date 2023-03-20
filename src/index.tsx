@@ -8,16 +8,16 @@ import { BrowserRouter } from "react-router-dom";
 import { LightTheme, DarkTheme } from "./themes";
 
 const root = ReactDOM.createRoot(
-    document.getElementById("root") as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
-    <React.StrictMode>
-        <BrowserRouter>
-            <ThemeProvider themeId="LightTheme" themes={{ LightTheme, DarkTheme }}>
-                <App />
-            </ThemeProvider>
-        </BrowserRouter>
-    </React.StrictMode>
+  <React.StrictMode>
+    <BrowserRouter>
+      <ThemeProvider themeId="DarkTheme" themes={{ LightTheme, DarkTheme }}>
+        <App />
+      </ThemeProvider>
+    </BrowserRouter>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
