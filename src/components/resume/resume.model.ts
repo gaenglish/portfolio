@@ -1,4 +1,4 @@
-import { IconName } from "@uni-design-system/uni-react";
+import { TagType } from "../tag/tag.types";
 
 export type LinkType =
   | "LinkedIn"
@@ -7,22 +7,6 @@ export type LinkType =
   | "Dribbble"
   | "Behance"
   | "PortfolioBox";
-
-export type TechnologyTagType =
-  | "SQL"
-  | "Node.js"
-  | ".Net"
-  | "React"
-  | "ReactNative"
-  | "Angular"
-  | "PHP"
-  | "C#"
-  | "TypeScript"
-  | "JavaScript"
-  | "Java"
-  | "CSS"
-  | "HTML"
-  | "Bootstrap";
 
 export interface ContactLink {
   type: LinkType;
@@ -37,8 +21,9 @@ interface Contact {
   links?: ContactLink[];
 }
 
-interface Responsibilities {
+interface Responsibility {
   description: string;
+  tags?: TagType[];
 }
 
 export interface Experience {
@@ -46,7 +31,7 @@ export interface Experience {
   startDate: string;
   endDate: string;
   jobTitle: string;
-  responsibilities: Responsibilities[];
+  responsibilities: Responsibility[];
 }
 
 interface Education {
