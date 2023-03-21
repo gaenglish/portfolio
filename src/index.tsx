@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { ThemeProvider } from "@uni-design-system/uni-react";
+import { LayoutProvider, ThemeProvider } from "@uni-design-system/uni-react";
 import { BrowserRouter } from "react-router-dom";
 import { LightTheme, DarkTheme } from "./themes";
 
@@ -13,9 +13,11 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeProvider themeId="DarkTheme" themes={{ LightTheme, DarkTheme }}>
-        <App />
-      </ThemeProvider>
+      <LayoutProvider>
+        <ThemeProvider themeId="DarkTheme" themes={{ LightTheme, DarkTheme }}>
+          <App />
+        </ThemeProvider>
+      </LayoutProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
