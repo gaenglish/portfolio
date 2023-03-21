@@ -1,0 +1,15 @@
+export type TagType =
+  | "SQL"
+  | "Node"
+  | "DotNet"
+  | "React"
+  | "ReactNative"
+  | "Angular"
+  | "PHP"
+  | "C#"
+  | "TypeScript"
+  | "JavaScript"
+  | "Java"
+  | "CSS"
+  | "HTML"
+  | "Bootstrap";
