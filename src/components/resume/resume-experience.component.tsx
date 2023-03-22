@@ -15,16 +15,14 @@ export const ResumeExperience = ({ experience }: ResumeExperienceProps) => {
         backdropFilter: "blur(5px)",
       }}
     >
-      <Flex align="space-between" style={{ width: "100%" }}>
+      <Flex align="space-between" wrap="wrap">
         <Flex grow={1} direction="column">
           <Text role="title-large">{experience.companyName}</Text>
           <Text role="title-medium">{experience.jobTitle}</Text>
         </Flex>
-        <div style={{ width: "200px", textAlign: "center" }}>
-          <Text role="title-large">
-            {experience.startDate} - {experience.endDate}
-          </Text>
-        </div>
+        <Text role="title-large">
+          {experience.startDate} - {experience.endDate}
+        </Text>
       </Flex>
       <ul style={{ paddingLeft: 0, listStyleType: "none" }}>
         {experience.responsibilities.map((responsibility) => (
