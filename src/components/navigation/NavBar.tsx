@@ -11,6 +11,8 @@ import {
 } from "@uni-design-system/uni-react";
 import { ResumeLink } from "../resume/resume-link.component";
 import { GeorgeEnglishResume } from "../../data/GeorgeEnglishResume";
+// @ts-ignore
+import ProfileImage from "../../data/GeorgeEnglish.jpg";
 
 export const NavBar = () => {
   const { colors } = useTheme();
@@ -105,6 +107,12 @@ export const NavBar = () => {
           />
 
           <Flex direction="column" justify="center" gap={12} align="center">
+            <img
+              src={ProfileImage}
+              width={160}
+              style={{ borderRadius: 80 }}
+              alt="George English's profile image"
+            />
             <ContactInfo />
           </Flex>
         </Card>
