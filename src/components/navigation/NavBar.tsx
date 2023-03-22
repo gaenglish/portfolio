@@ -24,6 +24,27 @@ export const NavBar = () => {
 
   const [open, { toggle }] = useToggle(false);
 
+  const ContactInfo = () => {
+    return (
+      <>
+        <Text role="headline-large" color="on-surface">
+          {contact.firstName} {contact.lastName}
+        </Text>
+
+        <a
+          href={`mailto:${contact.email}`}
+          style={{ color: colors["on-surface"] }}
+        >
+          {contact.email}
+        </a>
+
+        {contact.links?.map((link) => (
+          <ResumeLink link={link} />
+        ))}
+      </>
+    );
+  };
+
   return (
     <>
       <div
@@ -44,22 +65,7 @@ export const NavBar = () => {
         >
           {!mobile ? (
             <Flex gap={20} align="center" grow={1}>
-              <Text role="headline-large" color="on-surface">
-                {contact.firstName} {contact.lastName}
-              </Text>
-
-              <a
-                href={`mailto:${contact.email}`}
-                style={{ color: colors["on-surface"] }}
-              >
-                {contact.email}
-              </a>
-
-              <Flex justify="space-between" gap={20}>
-                {contact.links?.map((link) => (
-                  <ResumeLink link={link} />
-                ))}
-              </Flex>
+              <ContactInfo />
             </Flex>
           ) : (
             <Flex justify="space-between" align="center" grow={1}>
@@ -86,7 +92,7 @@ export const NavBar = () => {
         }}
       >
         <Card
-          height="100svh"
+          height="100%"
           borderRadius="none"
           elevation="modal"
           style={{ backgroundColor: colors.background }}
@@ -97,6 +103,10 @@ export const NavBar = () => {
             onClick={toggle}
             contentColor="on-surface"
           />
+
+          <Flex direction="column" justify="center" gap={12} align="center">
+            <ContactInfo />
+          </Flex>
         </Card>
       </Slide>
     </>
