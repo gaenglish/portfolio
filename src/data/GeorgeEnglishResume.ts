@@ -6,6 +6,7 @@ export const GeorgeEnglishResume: Resume = {
     lastName: "English",
     email: "gaenglish@gmail.com",
     personalUrl: "georgeenglish.dev",
+    profileImage: "GeorgeEnglish.jpg",
     links: [
       {
         type: "LinkedIn",
@@ -26,20 +27,19 @@ export const GeorgeEnglishResume: Resume = {
       endDate: "02/23",
       responsibilities: [
         {
+          tags: ["React", "GraphQL"],
           description:
             "Primarily used React(tsx) and Graph QL to create new features for pet owners to interact with their veterinarians.",
         },
         {
+          tags: ["ReactNative"],
           description:
             "Developed React-Native app to load in the responsive Pet Owner Website to mimic a native app, thus greatly reducing the cost and time to rollout a native app.",
         },
         {
+          tags: ["React", "Storybook"],
           description:
             "Created reusable React Components as part of a design system library used to drive a consistent user experience across all systems.",
-        },
-        {
-          description:
-            "Created testable standalone components and wrote documentation in Storybook.",
         },
         {
           description:
@@ -78,17 +78,21 @@ export const GeorgeEnglishResume: Resume = {
       endDate: "04/22",
       responsibilities: [
         {
+          tags: ["Angular", "Ionic"],
           description:
             "Optimized and maintained PetProConnect pet owner (Ionic/Angular) App.",
         },
         {
+          tags: ["Angular"],
           description:
             "Optimized and maintained PetProConnect clinic portal (Angular).",
         },
         {
+          tags: ["ReactNative"],
           description: "Built prototype React-Native App for Pawru Rebranding.",
         },
         {
+          tags: ["React"],
           description:
             "Helped develop Pawru Branded React Clinic Portal to replace Angular Portal.",
         },
@@ -106,6 +110,7 @@ export const GeorgeEnglishResume: Resume = {
             "Designed a membership based shopping portal for overnight delivery of pharmaceutical goods.",
         },
         {
+          tags: ["Angular"],
           description:
             "Developed shopping site using Angular 9, Redux and Material.",
         },
@@ -117,6 +122,11 @@ export const GeorgeEnglishResume: Resume = {
           description:
             "Designed and developed SQL Server database. Wrote SQL Stored procedures to support API. ",
         },
+        {
+          tags: ["SQL", "Encryption"],
+          description:
+            "Designed and developed SQL Auth methods utilizing SHA256 Salt hashing.",
+        },
       ],
     },
     {
@@ -126,14 +136,17 @@ export const GeorgeEnglishResume: Resume = {
       endDate: "10/19",
       responsibilities: [
         {
+          tags: ["Angular"],
           description:
             "Using the latest version of Angular, I provided expertise on multiple projects.",
         },
         {
+          tags: ["Redux"],
           description:
             "Big focus on building stateful systems through the use of Redux stores.",
         },
         {
+          tags: ["Ionic", "Node"],
           description:
             "Developed mobile app for ECGC using Ionic and an API built in Node.js.",
         },
@@ -158,8 +171,14 @@ export const GeorgeEnglishResume: Resume = {
       startDate: "09/17",
       endDate: "03/18",
       responsibilities: [
-        { description: "Developed applications in both Angular 1 and 4.\n" },
-        { description: "Maintained UI kit built with SASS and SVG." },
+        {
+          tags: ["Angular"],
+          description: "Developed applications in both Angular 1 and 4.\n",
+        },
+        {
+          tags: ["Bootstrap"],
+          description: "Maintained UI kit built with SASS and SVG.",
+        },
         { description: "Collaborated with team members to implement CORS." },
         { description: "Applied Google Analytics to utilization metrics" },
         {
@@ -184,6 +203,7 @@ export const GeorgeEnglishResume: Resume = {
             "Used design documents (PDFs and PSDs) to create a site from spec.",
         },
         {
+          tags: ["Bootstrap", "jQuery"],
           description:
             "Leveraged Bootstrap and jQuery to build a responsive, mobile ready platform.",
         },

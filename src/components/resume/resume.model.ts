@@ -14,6 +14,7 @@ export interface ContactLink {
 }
 
 interface Contact {
+  profileImage?: string;
   firstName: string;
   lastName: string;
   email: string;
