@@ -12,4 +12,10 @@ export type TagType =
   | "Java"
   | "CSS"
   | "HTML"
-  | "Bootstrap";
+  | "Bootstrap"
+  | "Storybook"
+  | "GraphQL"
+  | "Ionic"
+  | "Encryption"
+  | "Redux"
+  | "jQuery";
