@@ -111,7 +111,7 @@ export const NavBar = () => {
               src={ProfileImage}
               width={160}
               style={{ borderRadius: 80 }}
-              alt="George English's profile image"
+              alt="George English's portrait"
             />
             <ContactInfo />
           </Flex>
