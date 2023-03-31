@@ -14,8 +14,8 @@ export const ResumeComponent = ({
 
   return (
     <Flex direction="column" style={{ gap: 20 }}>
-      {experience.map((experience) => (
-        <ResumeExperience experience={experience} />
+      {experience.map((experience, index) => (
+        <ResumeExperience experience={experience} key={index} />
       ))}
     </Flex>
   );

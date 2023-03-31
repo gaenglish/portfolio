@@ -40,8 +40,8 @@ export const NavBar = () => {
           {contact.email}
         </a>
 
-        {contact.links?.map((link) => (
-          <ResumeLink link={link} />
+        {contact.links?.map((link, index) => (
+          <ResumeLink link={link} key={index} />
         ))}
       </>
     );

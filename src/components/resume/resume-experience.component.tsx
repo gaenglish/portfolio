@@ -25,8 +25,8 @@ export const ResumeExperience = ({ experience }: ResumeExperienceProps) => {
         </Text>
       </Flex>
       <ul style={{ paddingLeft: 0, listStyleType: "none" }}>
-        {experience.responsibilities.map((responsibility) => (
-          <li style={{ paddingBottom: "10px" }}>
+        {experience.responsibilities.map((responsibility, index) => (
+          <li style={{ paddingBottom: "10px" }} key={index}>
             <Text role="body-1-short">{responsibility.description}</Text>
           </li>
         ))}
