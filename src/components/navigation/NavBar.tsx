@@ -4,6 +4,7 @@ import {
   Card,
   Flex,
   Slide,
+  Switch,
   Text,
   useLayout,
   useTheme,
@@ -14,7 +15,11 @@ import { GeorgeEnglishResume } from "../../data/GeorgeEnglishResume";
 // @ts-ignore
 import ProfileImage from "../../data/GeorgeEnglish.jpg";
 
-export const NavBar = () => {
+export const NavBar = ({
+  onThemeChange,
+}: {
+  onThemeChange: (themeName: string) => void;
+}) => {
   const { colors } = useTheme();
   const { deviceSize } = useLayout();
   const { contact } = GeorgeEnglishResume;
@@ -52,7 +57,7 @@ export const NavBar = () => {
       <div
         style={{
           borderBottom: `1px solid ${colors.outline}`,
-          height: 50,
+
           backdropFilter: "blur(2px)",
           backgroundColor: colors.surface,
           position: "fixed",
@@ -61,13 +66,18 @@ export const NavBar = () => {
           zIndex: 2,
         }}
       >
-        <Flex
-          gap="20"
-          style={{ minHeight: 50, paddingLeft: 20, paddingRight: 10 }}
-        >
+        <Flex gap="20" style={{ paddingLeft: 20, paddingRight: 10 }}>
           {!mobile ? (
             <Flex gap={20} align="center" grow={1}>
               <ContactInfo />
+              <Flex grow={1} justify="flex-end">
+                <Button
+                  iconName="bars3"
+                  buttonType="icon"
+                  contentColor="on-surface"
+                  onClick={toggle}
+                />
+              </Flex>
             </Flex>
           ) : (
             <Flex justify="space-between" align="center" grow={1}>
@@ -114,6 +124,16 @@ export const NavBar = () => {
               alt="George English's portrait"
             />
             <ContactInfo />
+            <Flex direction="column" align="center" style={{ paddingTop: 30 }}>
+              <Text role="subtitle-2">Dark Mode</Text>
+              <Switch
+                size="md"
+                on={true}
+                onChange={(on) => {
+                  onThemeChange(on ? "DarkTheme" : "LightTheme");
+                }}
+              />
+            </Flex>
           </Flex>
         </Card>
       </Slide>

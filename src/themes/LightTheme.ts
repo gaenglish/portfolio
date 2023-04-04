@@ -23,7 +23,7 @@ export const LightTheme: Theme = {
     "on-error-container": "#410002",
     background: "#fbfdf9",
     "on-background": "#191c1a",
-    surface: "#fbfdf9",
+    surface: "hsla(0,0%,100%,0.8)",
     "on-surface": "#191c1a",
     "surface-variant": "#dbe5de",
     "on-surface-variant": "#404944",
