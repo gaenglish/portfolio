@@ -34,7 +34,7 @@ export const NavBar = ({
   const ContactInfo = () => {
     return (
       <>
-        <Text role="headline-large" color="on-surface">
+        <Text role="headline-large" colorToken="on-surface">
           {contact.firstName} {contact.lastName}
         </Text>
 
@@ -81,7 +81,7 @@ export const NavBar = ({
             </Flex>
           ) : (
             <Flex justify="space-between" align="center" grow={1}>
-              <Text role="headline-large" color="on-surface">
+              <Text role="headline-large" colorToken="on-surface">
                 GE
               </Text>
               <Button

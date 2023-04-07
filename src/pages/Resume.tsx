@@ -7,7 +7,7 @@ import { GeorgeEnglishResume } from "../data/GeorgeEnglishResume";
 export const Resume = () => {
   return (
     <Page>
-      <Text role="headline-large" color="on-surface">
+      <Text role="headline-large" colorToken="on-surface">
         Experience
       </Text>
 

@@ -5,7 +5,7 @@ import { Text } from "@uni-design-system/uni-react";
 export const Home = () => {
   return (
     <Page>
-      <Text role="headline-large" color="on-surface">
+      <Text role="headline-large" colorToken="on-surface">
         Home
       </Text>
     </Page>
