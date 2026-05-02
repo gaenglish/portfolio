@@ -9,10 +9,6 @@ export const GeorgeEnglishResume: Resume = {
     profileImage: "GeorgeEnglish.jpg",
     links: [
       {
-        type: "LinkedIn",
-        url: "https://www.linkedin.com/in/GeorgeEnglish",
-      },
-      {
         type: "GitHub",
         url: "https://github.com/gaenglish",
       },
@@ -20,6 +16,30 @@ export const GeorgeEnglishResume: Resume = {
   },
   summary: "",
   experience: [
+    {
+      companyName: "Assurant",
+      jobTitle: "Senior Software Engineer",
+      startDate: "4/23",
+      endDate: "4/26",
+      summary:
+        "Operated as a lead software engineer by pioneering several projects from the stance of a front-end developer. " +
+        "This involved setting up the initial project structure, integrating the design system, and establishing a CI/CD pipeline. " +
+        "Integrations with Okta/Auth0 and other third-party services were also set up on an as-needed basis. " +
+        "Mentoring and training was provided with each project handoff.",
+      responsibilities: [
+        {
+          tags: ["Angular", "Storybook", "CI/CD"],
+          description:
+            "Creator and maintainer of the teams first component library.  " +
+            "Each component was fully documented and compliant with the theme system. " +
+            "(ask for a demo)",
+        },
+        {
+          tags: ["TypeScript"],
+          description: "Developed component theme architecture to define color tokens, design tokens and component options at a global context level."
+        }
+      ],
+    },
     {
       companyName: "TeleVet",
       jobTitle: "Senior Mobile/Frontend Developer",
@@ -46,6 +66,7 @@ export const GeorgeEnglishResume: Resume = {
             "Developed in-app prescription refill interface and workflow for pet-owners to request refills based on past history.  This interface supported a dynamic form system used by clinics to capture additional information from their clients.",
         },
         {
+          tags: ["CI/CD"],
           description:
             "Developed Automated Icon Library for use in React Components (svg -> react component).  Automation leverages node.js and GitHub actions to publish packages on code merge.",
         },
@@ -80,21 +101,21 @@ export const GeorgeEnglishResume: Resume = {
         {
           tags: ["Angular", "Ionic"],
           description:
-            "Optimized and maintained PetProConnect pet owner (Ionic/Angular) App.",
+            "Optimized and maintained PetProConnect pet owner App.",
         },
         {
           tags: ["Angular"],
           description:
-            "Optimized and maintained PetProConnect clinic portal (Angular).",
+            "Optimized and maintained PetProConnect clinic portal.",
         },
         {
           tags: ["ReactNative"],
-          description: "Built prototype React-Native App for Pawru Rebranding.",
+          description: "Prototyped React-Native App for 'Pawru' Rebrand.",
         },
         {
           tags: ["React"],
           description:
-            "Helped develop Pawru Branded React Clinic Portal to replace Angular Portal.",
+            "Developed rebranded 'Pawru' Clinic Portal in React to replace Angular Portal.",
         },
       ],
     },
