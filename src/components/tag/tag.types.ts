@@ -18,4 +18,16 @@ export type TagType =
   | "Ionic"
   | "Encryption"
   | "Redux"
-  | "jQuery";
+  | "jQuery"
+  | "Azure"
+  | "Jest"
+  | "Webpack"
+  | "SASS"
+  | "LESS"
+  | "Git"
+  | "Docker"
+  | "AWS"
+  | "Firebase"
+  | "Linux"
+  | "Windows"
+  | "CI/CD";
