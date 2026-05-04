@@ -127,21 +127,21 @@ export const GeorgeEnglishResume: Resume = {
         {
           tags: ["Angular", "Ionic"],
           description:
-            "Optimized and maintained PetProConnect pet owner (Ionic/Angular) App.",
+            "Optimized and maintained PetProConnect pet owner App.",
         },
         {
           tags: ["Angular"],
           description:
-            "Optimized and maintained PetProConnect clinic portal (Angular).",
+            "Optimized and maintained PetProConnect clinic portal.",
         },
         {
           tags: ["ReactNative"],
-          description: "Built prototype React-Native App for Pawru Rebranding.",
+          description: "Prototyped React-Native App for 'Pawru' Rebrand.",
         },
         {
           tags: ["React"],
           description:
-            "Helped develop Pawru Branded React Clinic Portal to replace Angular Portal.",
+            "Developed rebranded 'Pawru' Clinic Portal in React to replace Angular Portal.",
         },
       ],
     },
