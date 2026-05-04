@@ -42,7 +42,7 @@ export const GeorgeEnglishResume: Resume = {
         {
           tags: ["CI/CD", "Turborepo", "Semantic Versioning"],
           description:
-            "Set up semantic versioning system to read to read commit comments to determine the next package version and fully automated the process in the release pipelines.",
+            "Set up semantic versioning system to read commit comments for determining the next intended package version number and fully automated the process within the release pipelines.",
         },
         {
           tags: ["Integration"],
