@@ -32,6 +32,7 @@ export interface Experience {
   startDate: string;
   endDate: string;
   jobTitle: string;
+  summary?: string;
   responsibilities: Responsibility[];
 }
 

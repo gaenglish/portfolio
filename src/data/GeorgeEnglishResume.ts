@@ -9,10 +9,6 @@ export const GeorgeEnglishResume: Resume = {
     profileImage: "GeorgeEnglish.jpg",
     links: [
       {
-        type: "LinkedIn",
-        url: "https://www.linkedin.com/in/GeorgeEnglish",
-      },
-      {
         type: "GitHub",
         url: "https://github.com/gaenglish",
       },
@@ -21,53 +17,104 @@ export const GeorgeEnglishResume: Resume = {
   summary: "",
   experience: [
     {
+      companyName: "Assurant",
+      jobTitle: "Senior Software Engineer",
+      startDate: "4/23",
+      endDate: "4/26",
+      summary:
+        "Operated as a lead software engineer by pioneering several projects from the stance of a front-end developer. " +
+        "This involved setting up the initial project structure, integrating the design system, and establishing a CI/CD pipeline. " +
+        "Integrations with Okta/Auth0 and other third-party services were also set up on an as-needed basis. " +
+        "Mentoring and training was provided with each project handoff.",
+      responsibilities: [
+        {
+          tags: ["Angular", "Storybook", "CI/CD", "Design System"],
+          description:
+            "Creator and maintainer of the teams first component library. " +
+            "Each component was fully documented and compliant with the theme system. " +
+            "(ask for a demo)",
+        },
+        {
+          tags: ["TypeScript"],
+          description:
+            "Developed component theme architecture to define color tokens, design tokens and component options at a global context level.",
+        },
+        {
+          tags: ["CI/CD", "Turborepo", "Semantic Versioning"],
+          description:
+            "Set up semantic versioning system to read to read commit comments to determine the next package version and fully automated the process in the release pipelines.",
+        },
+        {
+          tags: ["Integration"],
+          description:
+            "Set up reCAPTCHA v3 for frictionless real-user ascertainment.",
+        },
+        {
+          tags: ["Integration", "Security", "Node", "Express"],
+          description:
+            "Integrated Okta into all Angular applications.  This entailed pulling in environment configurations at application initialization.",
+        },
+        {
+          tags: ["Node", "CI/CD", "Angular", "Design System"],
+          description:
+            "Mentored, Senior and Lead developers in the patterns and best practices for developing Angular applications and working with the design system.",
+        },
+      ],
+    },
+    {
       companyName: "TeleVet",
       jobTitle: "Senior Mobile/Frontend Developer",
       startDate: "04/22",
       endDate: "02/23",
       responsibilities: [
         {
-          tags: ["React", "GraphQL"],
+          tags: ["React", "GraphQL", "TypeScript"],
           description:
-            "Primarily used React(tsx) and Graph QL to create new features for pet owners to interact with their veterinarians.",
+            "Create portal features for pet owners to interact with their veterinarians.",
         },
         {
           tags: ["ReactNative"],
           description:
-            "Developed React-Native app to load in the responsive Pet Owner Website to mimic a native app, thus greatly reducing the cost and time to rollout a native app.",
+            "Created a 'wrapper' app for loading the responsive Pet Owner Portal. to mimic a native app, thus greatly reducing the cost and time to rollout a native app.",
         },
         {
           tags: ["React", "Storybook"],
           description:
-            "Created reusable React Components as part of a design system library used to drive a consistent user experience across all systems.",
+            "Extended and maintained the component library and introduced the theme system for supporting 'dark-mode'.",
         },
         {
+          tags: ["React", "GraphQL"],
           description:
-            "Developed in-app prescription refill interface and workflow for pet-owners to request refills based on past history.  This interface supported a dynamic form system used by clinics to capture additional information from their clients.",
+            "Developed a dynamic in-app prescription refill workflow for pet-owners. Veterinarians had control over the form and flow and determined what additional information to capture for the prescription.",
         },
         {
+          tags: ["React", "Node", "CI/CD"],
           description:
-            "Developed Automated Icon Library for use in React Components (svg -> react component).  Automation leverages node.js and GitHub actions to publish packages on code merge.",
+            "Automated Icon Library: converted SVGs to React components through an automated node.js GitHub action workflow. SVGs added to the library would automatically be converted to React components.",
         },
         {
+          tags: ["Integration"],
           description:
-            "Integrated Unlayer email template editor for white-label use in an automated email system.",
+            "Implemented Unlayer email template editor for white-label email system.",
         },
         {
+          tags: ["SQL"],
           description:
-            "Provided database schema and guidance to back-end developers to support version control for clinic’s custom email templates based on previous experience in developing Content Management Systems (CMS).",
+            "Delivered database schemas and instruction for the back-end team to establish version control in email template system (utilized extensive experience in developing Content Management Systems).",
         },
         {
+          tags: ["GraphQL"],
           description:
             "Wrote several GraphQL queries to support various front-end features such as the prescription refill system and email template editor. ",
         },
         {
+          tags: ["React", "Storybook"],
           description:
-            "Provided daily code reviews and added guidance on how to implement the component library / design system.",
+            "Conducted daily code reviews and provided guidance for introducing components into the design system.",
         },
         {
           description:
-            "Gave demos and presentations at an organization level to show off new app features.",
+            "Presented demos of team's added features to the organization.",
         },
       ],
     },
@@ -103,12 +150,9 @@ export const GeorgeEnglishResume: Resume = {
       jobTitle: "Lead Fullstack Developer",
       startDate: "10/19",
       endDate: "8/20",
+      summary:
+        "Led full-stack development and design for a membership-based overnight delivery portal for pharmaceutical goods, utilizing Angular, ASP.NET MVC, and SQL Server.",
       responsibilities: [
-        { description: "Operated as a full-stack developer and designer. " },
-        {
-          description:
-            "Designed a membership based shopping portal for overnight delivery of pharmaceutical goods.",
-        },
         {
           tags: ["Angular"],
           description:
@@ -116,7 +160,7 @@ export const GeorgeEnglishResume: Resume = {
         },
         {
           description:
-            "Designed and developed API using classic ASP.NET MVC methodologies as requested by MD.",
+            "Designed and developed API using classic ASP.NET MVC methodologies.",
         },
         {
           description:
