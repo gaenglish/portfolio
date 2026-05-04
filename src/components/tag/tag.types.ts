@@ -1,6 +1,11 @@
 export type TagType =
   | "SQL"
+  | "MongoDB"
+  | "MySQL"
+  | "PostgreSQL"
+  | "SQL Server"
   | "Node"
+  | "Express"
   | "DotNet"
   | "React"
   | "ReactNative"
@@ -30,4 +35,9 @@ export type TagType =
   | "Firebase"
   | "Linux"
   | "Windows"
-  | "CI/CD";
+  | "CI/CD"
+  | "Integration"
+  | "Security"
+  | "Design System"
+  | "Turborepo"
+  | "Semantic Versioning";
