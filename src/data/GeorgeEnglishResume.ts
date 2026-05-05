@@ -22,7 +22,7 @@ export const GeorgeEnglishResume: Resume = {
       startDate: "4/23",
       endDate: "4/26",
       summary:
-        "Operated as a lead software engineer by pioneering several projects from the stance of a front-end developer. " +
+        "Operated as a lead software engineer and architect by pioneering several projects from the stance of a front-end developer. " +
         "This involved setting up the initial project structure, integrating the design system, and establishing a CI/CD pipeline. " +
         "Integrations with Okta/Auth0 and other third-party services were also set up on an as-needed basis. " +
         "Mentoring and training was provided with each project handoff.",
@@ -31,18 +31,21 @@ export const GeorgeEnglishResume: Resume = {
           tags: ["Angular", "Storybook", "CI/CD", "Design System"],
           description:
             "Creator and maintainer of the teams first component library. " +
-            "Each component was fully documented and compliant with the theme system. " +
+            "Each component was fully documented and reactive to the theme system. " +
+            "The key advantage of this system is that it allows developers to implement features in Angular without ever writing a single line of CSS." +
             "(ask for a demo)",
         },
         {
           tags: ["TypeScript"],
           description:
-            "Developed component theme architecture to define color tokens, design tokens and component options at a global context level.",
+            "Developed component theme architecture to define color tokens, design tokens and component options at a global context level. " +
+            "The focus here was to remain framework agnostic, allowing for easy integration with other frameworks and libraries.",
         },
         {
           tags: ["CI/CD", "Turborepo", "Semantic Versioning"],
           description:
-            "Set up semantic versioning system to read commit comments for determining the next intended package version number and fully automated the process within the release pipelines.",
+            "Wrote up semantic versioning system to read commit messages for determining the next intended package version number and fully automated the process within the release pipelines. " +
+            "Documentation was provided to explain the keyword nomenclature used to trigger version implementation and how it leverages AI generated changelogs.",
         },
         {
           tags: ["Integration"],
@@ -53,6 +56,12 @@ export const GeorgeEnglishResume: Resume = {
           tags: ["Integration", "Security", "Node", "Express"],
           description:
             "Integrated Okta into all Angular applications.  This entailed pulling in environment configurations at application initialization.",
+        },
+        {
+          tags: ["Node", "Express", "Security", "CI/CD"],
+          description:
+            "Programmatically applied CSP (Content Security Policy) headers to applications to prevent XSS attacks.  " +
+            "This involved writing custom middleware to dynamically generate and apply CSP headers based on application environment configurations.  ",
         },
         {
           tags: ["Node", "CI/CD", "Angular", "Design System"],
@@ -126,13 +135,11 @@ export const GeorgeEnglishResume: Resume = {
       responsibilities: [
         {
           tags: ["Angular", "Ionic"],
-          description:
-            "Optimized and maintained PetProConnect pet owner App.",
+          description: "Optimized and maintained PetProConnect pet owner App.",
         },
         {
           tags: ["Angular"],
-          description:
-            "Optimized and maintained PetProConnect clinic portal.",
+          description: "Optimized and maintained PetProConnect clinic portal.",
         },
         {
           tags: ["ReactNative"],
