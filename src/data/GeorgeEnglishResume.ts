@@ -14,7 +14,11 @@ export const GeorgeEnglishResume: Resume = {
       },
     ],
   },
-  summary: "",
+  summary:
+    "Hello, I am a Design Systems Engineer / UX Platform Architect living in Raleigh, North Carolina.  " +
+    "I have over two decades of software design, development, and management experience. " +
+    "My passion is for elevating the human experience in software; whether for the end user with a well crafted UI, the developer by crafting readable code and reusable building blocks, or the business by implementing time saving automations.  " +
+    "I have a proven track record for elevating teams, raising the bar on code quality and accelerating code delivery. ",
   experience: [
     {
       companyName: "Assurant",

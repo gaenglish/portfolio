@@ -25,9 +25,9 @@ export const ResumeExperience = ({ experience }: ResumeExperienceProps) => {
           {experience.startDate} - {experience.endDate}
         </Text>
       </Flex>
-      <p>
-        {experience.summary}
-      </p>
+      <div style={{ paddingBottom: "10px" }}>
+        <Text role="body-1-short">{experience.summary}</Text>
+      </div>
       <Text role="title-large">Contributions</Text>
       <ul style={{ paddingLeft: 16 }}>
         {experience.responsibilities.map((responsibility, index) => (
