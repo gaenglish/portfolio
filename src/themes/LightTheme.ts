@@ -1,5 +1,5 @@
-import { Theme, BaseTheme } from "@uni-design-system/uni-core";
-export const LightTheme: Theme = {
+import { UniTheme, BaseTheme } from "@uni-design-system/uni-core";
+export const LightTheme: UniTheme = {
   ...BaseTheme,
   id: "LightTheme",
   name: "Light Theme",

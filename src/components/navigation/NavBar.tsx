@@ -72,7 +72,7 @@ export const NavBar = ({
               <ContactInfo />
               <Flex grow={1} justify="flex-end">
                 <Button
-                  iconName="bars3"
+                  iconName="barsSolid"
                   buttonType="icon"
                   contentColor="on-surface"
                   onClick={toggle}
@@ -85,7 +85,7 @@ export const NavBar = ({
                 GE
               </Text>
               <Button
-                iconName="bars3"
+                iconName="barsSolid"
                 buttonType="icon"
                 contentColor="on-surface"
                 onClick={toggle}
@@ -111,7 +111,7 @@ export const NavBar = ({
         >
           <Button
             buttonType="icon"
-            iconName="xMark"
+            iconName="xmarkSolid"
             onClick={toggle}
             contentColor="on-surface"
           />
